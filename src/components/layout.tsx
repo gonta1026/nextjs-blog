@@ -6,7 +6,7 @@ import Link from 'next/link'
 export const siteTitle = 'Next.js Sample Website'
 const name = 'kekeek!!!';
 
-interface Layout {children: ReactNode, home?: boolean}
+interface Layout {children: React.ReactNode, home?: boolean}
 
 const Layout = ({ children, home }: Layout):JSX.Element =>  {
   return (
