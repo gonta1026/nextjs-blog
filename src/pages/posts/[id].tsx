@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
-import utilStyles from '../../styles/utils.module.css'
+import utilStyles from '../../../public/styles/utils.module.css'
 import { postData } from '../../types/posts'
 
 export const getStaticPaths: GetStaticPaths = async () => {

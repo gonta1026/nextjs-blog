@@ -2,11 +2,10 @@ import Head from 'next/head'
 import styles from '../../public/styles/layout.module.css'
 import utilStyles from '../../public/styles/utils.module.css'
 import Link from 'next/link'
-
 export const siteTitle = 'Next.js Sample Website'
 const name = 'kekeek!!!';
 
-interface Layout {children: ReactNode, home?: boolean}
+interface Layout {children: React.ReactNode, home?: boolean}
 
 const Layout = ({ children, home }: Layout):JSX.Element =>  {
   return (
