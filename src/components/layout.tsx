@@ -3,10 +3,12 @@ import styles from '../styles/layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'kekeek!!!'
 export const siteTitle = 'Next.js Sample Website'
+const name = 'kekeek!!!';
 
-export default function Layout({ children, home }) {
+interface Layout {children: ReactNode, home?: boolean}
+
+const Layout = ({ children, home }: Layout):JSX.Element =>  {
   return (
     <div className={styles.container}>
       <Head>
@@ -64,3 +66,5 @@ export default function Layout({ children, home }) {
     </div>
   )
 }
+
+export default Layout;
